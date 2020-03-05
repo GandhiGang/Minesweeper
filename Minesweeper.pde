@@ -121,7 +121,7 @@ public class MSButton
             gameOver = true;
         }
         else if(countMines(myRow, myCol)>0)
-            myLabel = Integer.toString(countMines(myRow, myCol));
+            myLabel = "" + countMines(myRow, myCol);
         else{
             if(isValid(myRow-1,myCol-1) && !buttons[myRow-1][myCol-1].isClicked())
                 buttons[myRow-1][myCol-1].mousePressed();
